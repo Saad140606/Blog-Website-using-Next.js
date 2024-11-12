@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerLi {
+    @apply text-primaryColor hover:text-secondaryColor cursor-pointer duration-300;
+  }
+}
+
+html{
+  background: rgb(24, 24, 24);
+}
+h1,h4{
+  color: white;
+}
+p{
+  color: rgb(173 183 190);
+}
+h3{
+  color: antiquewhite;
+}
+.main-container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -200px;
+
+}
+.comment-flexbox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.comment-text{
+  margin: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+.input-box{
+  height: 75px;
+  width: 465px;
+  background-color: white;
+}
+.comment-button{
+  height: 40px;
+  width: 80px;
+  background-color: blue;
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  border-radius: 5px;
+   border-style: none;
+   cursor: pointer;
+}
+.comment-container{
+  height: 75px;
+  width: 465px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  word-break: break-all; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.comment-container textarea{
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+.button-delete{
+  margin-left: 10px;
+  background-color: #c70000;
+  height: 40px;
+  width: 80px;
+
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  border-radius: 5px;
+   border-style: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+.button-delete:hover{
+  background-color: #ed5e5e;
+}
+button:hover{
+  background-color: #0a77d5;
+}
+.button,.edit-delete-container{
+  height: 40px;
+  width: 80px;
+  background-color: #1b0fff;
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  border-radius: 5px;
+   border-style: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+.edit-delete-container{
+  display: flex;
+  flex-direction: row;
+}
+.textarea-button-container{
+  display: flex;
+  flex-direction: column;
+}
+.button-edit{
+  color: white;
+  background-color: #1b0fff;
+  height: 40px;
+  width: 80px;
+  background-color: #1b0fff;
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  border-radius: 5px;
+   border-style: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
