@@ -25,3 +25,4 @@ export const CommentInput: React.FC<CommentInputProps> = ({ onSubmit }) => {
         </form></div>
     )
 }
+export default CommentInput
