@@ -42,7 +42,7 @@ export const CommentList: React.FC<CommentListProps> = ({
                 <div className="textarea-button-container">
                        <textarea 
                        value={comment.text}
-                        className="comment-container"
+                       className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-8"
                          onChange={(e) => 
                             setComments(
                          comments.map((c) =>
@@ -53,13 +53,13 @@ export const CommentList: React.FC<CommentListProps> = ({
     
       
        <div className="edit-delete-container">
-        <button onClick={()=> handleSave(comment.id, comment.text)}>Save</button>
+        <button className="button-edit" onClick={()=> handleSave(comment.id, comment.text) }>Save</button>
         <button className="button-delete">Delete</button>
         </div>
         </div>
         ) :(
             <>
-            <div className="comment-container">{comment.text}</div>
+            <div className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-8">{comment.text}</div>
             <button onClick={()=> handleEdit(comment.id)} className="button-edit">Edit</button>
             <button onClick={() => handleDelete(comment.id)} className="button-delete">Delete</button></>
         )}

@@ -19,12 +19,12 @@ const App: React.FC = () => {
     }
     return ( 
         
-    <div className="main-container">
+    <div className="main-containe">
         <h1 className="font-bold text-5xl text-center pb-05 content text-black-600">COMMENT SECTION</h1>
         <br />
-        <h4>(SHARE YOUR THOUGHTS WITH US)</h4>
+        <h4 className="text-center">(SHARE YOUR THOUGHTS WITH US)</h4>
         <br />
-    <CommentList comments={comments} setComments={setComments}/>
+    <CommentList comments={comments} setComments={setComments} />
     <CommentInput onSubmit={handleSubmit} />
     </div>
     )

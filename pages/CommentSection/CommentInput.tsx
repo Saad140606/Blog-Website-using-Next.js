@@ -17,9 +17,10 @@ export const CommentInput: React.FC<CommentInputProps> = ({ onSubmit }) => {
         
         <form onSubmit={handleSubmit}>
             <textarea 
+            placeholder="Comment....."
             value={text}
             onChange={(e) => setText(e.target.value)}
-            className="input-box"
+            className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-8"
             />
             <button className="comment-button">Submit</button>
         </form></div>
