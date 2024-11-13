@@ -12,7 +12,7 @@ interface CardProps {
 export default function Card({ category, title, image, price, link }: CardProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-      <a className="block relative h-64 rounded overflow-hidden" >
+      <div className="block relative h-64 rounded overflow-hidden" >
        <Link
        href={link}>
        <Image
@@ -22,7 +22,7 @@ export default function Card({ category, title, image, price, link }: CardProps)
           width={1000}
           height={1000}
         /></Link>
-      </a>
+      </div>
       <div className="p-6">
         <Link href={link}><h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{category}</h3>
         <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2></Link>

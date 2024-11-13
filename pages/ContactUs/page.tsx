@@ -5,7 +5,7 @@ import NewsLetter from "../../components/NewsLetter";
 
 export default function Contact() {
   return (
-    <>
+    <div>
      <Header />
 
       <div className="container-xxl py-5">
@@ -90,6 +90,6 @@ export default function Contact() {
       </div>
       <NewsLetter />
       <Footer />
-    </>
+    </div>
   );
 }
