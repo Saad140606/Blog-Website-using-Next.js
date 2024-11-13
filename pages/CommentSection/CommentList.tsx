@@ -13,7 +13,7 @@ export const CommentList: React.FC<CommentListProps> = ({
 }) => {
     const handleEdit = (commentId:number) => {
         setComments (
-            comments.map((comment)=>{
+            comments && comments.map((comment)=>{
                 if(comment.id === commentId){
                     return{...comment,editable:true}
                 }
@@ -23,7 +23,7 @@ export const CommentList: React.FC<CommentListProps> = ({
         };
         const handleSave = (commentId: number, newText: string) => {
             setComments(
-                comments.map((comment) => {
+               comments && comments.map((comment) => {
                     if(comment.id === commentId) {
                         return {...comment, text: newText, editable: false};                    
                     }
@@ -36,7 +36,7 @@ export const CommentList: React.FC<CommentListProps> = ({
         };
 
     return(<div>
-        {comments.map((comment)=>(
+        {comments && comments.map((comment)=>(
             <div key={comment.id}>
               {comment.editable ? (
                 <div className="textarea-button-container">
@@ -45,7 +45,7 @@ export const CommentList: React.FC<CommentListProps> = ({
                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-8"
                          onChange={(e) => 
                             setComments(
-                         comments.map((c) =>
+                        comments && comments.map((c) =>
                             c.id === comment.id ? {...c, text: e.target.value } : c)
                              )}
                              /> 

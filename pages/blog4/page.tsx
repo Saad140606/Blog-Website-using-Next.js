@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer";
-import Image from 'next/image'
+
 import NewsLetter from "../../components/NewsLetter";
 import  Header  from "../../components/Header";
 import Comment   from "../CommentSection/page"
